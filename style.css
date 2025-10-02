@@ -58,3 +58,13 @@ header {
   padding: 20px;
   text-align: center;
 }
+
+a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #005fa3;
+}
