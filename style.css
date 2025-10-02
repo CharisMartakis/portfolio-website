@@ -45,3 +45,16 @@ section {
   border-radius: 8px;
   font-weight: bold;
 }
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eaeaea;
+  margin-top: 40px;
+}
+
+header {
+  background-color: #eaeaea;
+  padding: 20px;
+  text-align: center;
+}
