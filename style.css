@@ -1,13 +1,62 @@
 body {
   font-family: Helvetica, sans-serif;
-  background-color: #0b7f9c;
+  /* DEFAULT COLOR: background-color: #0b7f9c;*/
+  background-color: #3396D3;
   margin: 0;
   padding: 0;
   color: #333;
+  display: flex; 
+  overflow-x: hidden;
+  flex-direction: column;
+  min-height: 100vh;
+
 }
 
+header {
+  /* DEFAULT COLOR: background-color: #eaeaea;*/
+  background-color: #EBCB90;
+  padding: 0px;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  
+}
+
+footer {
+  /* DEFAULT COLOR: background-color: #eaeaea;*/
+  background-color: #EBCB90;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+
+  width: 100%;
+ font-size: 14px;
+  color: #666;
+  clear: both;
+  
+}
+
+section {
+ 
+
+  /*width: 50%;
+  max-width: 690px;
+  min-width: 690px;*/
+  width: 90%;         
+  max-width: 690px;    
+  min-width: 0;        
+  margin: 40px auto;
+  padding: 20px;
+  /* DEFAULT COLOR: background-color: #fff;*/
+  background-color: #EEEEEE;
+  border-radius: 10px;
+}
+
+
 .hero {
-  background-color: #ffffff;
   padding: 40px 20px;
   text-align: center;
 }
@@ -17,64 +66,11 @@ body {
   margin: 20px 0;
 }
 
-.hero a {
-  display: inline-block;
-  margin: 0 10px;
-  text-decoration: none;
-  color: #0077cc;
-}
-
-section {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-}
-
-.skills-grid {
-  display: flex;
-  
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.skills-grid span {
-  background-color: #eaeaea;
-  padding: 10px 15px;
-  border-radius: 8px;
-  font-weight: bold;
-}
-
-header {
-  background-color: #eaeaea;
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 40px;
-  position: static;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-  
-}
-
-footer {
-  background-color: #eaeaea;
-  padding: 20px;
-  text-align: center;
-  margin-top: 40px;
-  position: static;
-  bottom: 0;
-  z-index: 1000;
-  width: 100%;
-
-  
-  font-size: 14px;
-  color: #666;
-}
 
 
 a {
+  display: inline-block;
+  margin: 0 10px;
   text-decoration: none;
   color: #0077cc;
 }
@@ -83,6 +79,60 @@ a:hover {
   text-decoration: underline;
   color: #005fa3;
 }
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-grid span {
+  /* DEFAULT COLOR: background-color: #eaeaea;*/
+  background-color: #91C4C3;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+nav {
+  background-color: #222;
+  padding: 15px 0;
+  text-align: center;
+  width: 100%;
+}
+
+nav a {
+  color: #EBCB90;
+  text-decoration: none;
+  margin: 0 18px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.2s;
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #EBCB90;
+  color: #222;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 10px 0;
+  }
+  nav a {
+    display: block;
+    margin: 10px auto;
+    font-size: 20px;
+    width: fit-content;
+  }
+}
+
+
 
 /*for the greek-flag project below*/
 .greek-flag-container {
