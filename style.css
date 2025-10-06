@@ -130,4 +130,61 @@ div.white-stripe > p {
     font-weight: bold;
 }
 
+/*for the pricing-table project below*/
 
+.pricing-table-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 20px;
+    flex-wrap: wrap;
+    font-family: "Sono", sans-serif;
+}
+.pricing-plan {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+.plan-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.plan-price {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0;
+    
+}
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+.plan-features li {
+    margin: 5px 0;
+}
+.plan-button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.plan-button:hover {
+    background-color: #005fa3;
+}
+@media (max-width: 1250px) {
+    .pricing-table-container {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+/* End of style.css */
