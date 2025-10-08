@@ -236,5 +236,40 @@ div.white-stripe > p {
         height: 100%;
     }
 }
+/*Piet Mondrian painting project below*/
+.mondrian-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.mondrian {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(4, 150px);
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.mondrian div {
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+.red-block {
+    background-color: red;
+}
+.blue-block {
+    background-color: blue;
+}
+.yellow-block {
+    background-color: yellow;
+}
+.white-block {
+    background-color: white;
+}
+
+
 
 /* End of style.css */
