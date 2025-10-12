@@ -1,5 +1,5 @@
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif ;
   /* DEFAULT COLOR: background-color: #0b7f9c;*/
   background-color: #3396D3;
   margin: 0;
@@ -37,12 +37,8 @@ footer {
   
 }
 
-section {
+.white-generic-card {
  
-
-  /*width: 50%;
-  max-width: 690px;
-  min-width: 690px;*/
   width: 90%;         
   max-width: 690px;    
   min-width: 0;        
@@ -53,6 +49,14 @@ section {
   border-radius: 10px;
 }
 
+.generic-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
 
 .hero {
   padding: 40px 20px;
