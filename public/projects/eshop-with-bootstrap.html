@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset='utf-8'>
+    <title>eshop with bootstrap</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='../../style.css'> -->
+    <style>
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: .75rem;
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: .75rem;
+}
+
+.text-shadow-1 { text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25); }
+.text-shadow-2 { text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25); }
+.text-shadow-3 { text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25); }
+
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.feature-icon-small {
+  width: 3rem;
+  height: 3rem;
+}
+
+@media (min-width: 62rem) { /* 992px */
+  .container.containerThreshold {
+    max-width: 45rem;
+  }
+}
+
+@media (min-width: 75rem) { /* 1200px */
+  .container.containerThreshold {
+    max-width: 56.25rem; /* 900px */
+  }
+}
+
+@media (min-width: 87.5rem) { /* 1400px */
+  .container.containerThreshold {
+    max-width: 62.5rem; /* 1000px */
+  }
+}
+
+.carousel-img {
+  height: 18rem; /* ~288px on small screens */
+  object-fit: contain;
+}
+
+@media (min-width: 62rem) { /* 992px */
+  .carousel-img {
+    height: 25rem; /* ~400px on desktops */
+  }
+}
+
+.site-footer {
+  background-color: #EBCB90;
+}
+
+.site-footer a {
+  color: #333; /* ensure links are visible */
+  transition: opacity 0.2s ease-in-out;
+}
+
+.site-footer a:hover {
+  opacity: 0.7;
+}
+
+.site-footer img {
+  filter: none; /* ensures logo colors remain true */
+}
+
+
+    </style>
+  </head>
+<!-- background-color: #EBCB90; -->
+  <body style="background-color: #3396D3;">
+
+        <nav class="navbar navbar-expand-lg " style="background-color: #EBCB90">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./eshop-with-bootstrap.html"><img src="../../assets/images/duck_button_logo.png" alt="ClothWorld Logo" width="30" height="30"> ClothWorld</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Cloth ID" aria-label="Search" />
+                <button class="btn btn-outline-success" type="submit">Check</button>
+            </form>
+            </div>
+        </div>
+    </nav>
+
+<div class="px-4 pt-5 my-5 text-center border-bottom">
+  <h1 class="display-4 fw-bold text-body-emphasis">Welcome to ClothWorld</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">Here you can buy a variety of clothes like T-shirts, pants, undewear and lots lots more.</p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5"> <button type="button"
+        class="btn btn-primary btn-lg px-4 me-sm-3">Yo</button> <button type="button"
+        class="btn btn-outline-secondary btn-lg px-4">Yo 2</button> </div>
+  </div>
+  <div class="overflow-hidden" style="max-height: 100vh;">
+    <div class="container px-5"> <img src="../../assets/images/duck_button_logo.png"
+        class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="300" loading="lazy"> </div>
+  </div>
+</div>
+
+
+
+<div class="container px-4 py-5" id="hanging-icons">
+  <h2 class="pb-2 border-bottom">Hanging icons</h2>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="col d-flex align-items-start">
+      <div
+        class="icon-square text-body-emphasis  d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <img src="../../assets/images/duck_button_logo.png" alt="Duck Button Logo" width="32" height="32"> </div>
+      <div>
+        <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+          probably just keep going until we run out of words.</p> <a href="#" class="btn btn-primary">
+          Primary button
+        </a>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <div
+        class="icon-square text-body-emphasis  d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <img src="../../assets/images/duck_button_logo.png" alt="Duck Button Logo" width="32" height="32"> </div>
+      <div>
+        <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+          probably just keep going until we run out of words.</p> <a href="#" class="btn btn-primary">
+          Primary button
+        </a>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <div
+        class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <img src="../../assets/images/duck_button_logo.png" alt="Duck Button Logo" width="32" height="32"> </div>
+      <div>
+        <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+          probably just keep going until we run out of words.</p> <a href="#" class="btn btn-primary">
+          Primary button
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container containerThreshold">
+    <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="../../assets/images/duck_button_logo.png" class="d-block w-100 carousel-img" alt="...">
+
+        </div>
+        <div class="carousel-item">
+        <img src="../../assets/images/birthday-invitation-doge.png" height="400" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+        <img src="../../assets/images/motivational-quote.jpg"  class="d-block w-100 carousel-img" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+</div>
+
+<br><br><br>
+
+<footer class="site-footer w-100 py-4 px-3">
+  <div class="row align-items-center text-center text-md-start gx-0">
+    <div class="col-12 col-md-4 mb-3 mb-md-0">
+      <p class="mb-0 text-body-secondary">© 2025 Charis Martakis. All Rights Reserved.</p>
+    </div>
+
+    <div class="col-12 col-md-4 mb-3 mb-md-0 text-center">
+      <a href="../../index.html" class="d-inline-flex align-items-center justify-content-center text-decoration-none">
+        <img src="../../assets/images/duck_button_logo.png" alt="Duck Button Logo" width="32" height="32">
+      </a>
+    </div>
+
+    <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end">
+      <ul class="nav list-unstyled d-flex mb-0">
+
+        <li class="ms-3">
+          <a href="#" aria-label="LinkedIn">
+            <img src="../../assets/images/linkedin.svg" alt="LinkedIn" width="32" height="32">
+          </a>
+        </li>
+        <li class="ms-3">
+          <a href="#" aria-label="GitHub">
+            <img src="../../assets/images/github.svg" alt="GitHub" width="32" height="32">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+<!-- <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 px-3 site-footer ">
+  <p class="col-md-4 mb-0 text-body-secondary">© 2025 Charis Martakis. All Rights Reserved.</p> <a href="../../index.html"
+    class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+    aria-label="Bootstrap"> <img src="../../assets/images/duck_button_logo.png" alt="Duck Button Logo" width="32" height="32"> </a>
+  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+    <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Instagram"><img src="../../assets/images/instagram.svg" alt="Instagram Logo" width="32" height="32"></a></li>
+    <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="LinkedIn"><img src="../../assets/images/linkedin.svg" alt="LinkedIn Logo" width="32" height="32"></a></li>
+  </ul>
+</footer> -->
+
+    <!-- <footer>
+        <p>© 2025 Charis Martakis. All Rights Reserved.</p>
+        <p><a href="../../index.html" draggable="true">Back to Home</a></p>
+    </footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>     
+  </body>
+</html>

@@ -4,13 +4,14 @@
         <meta charset='utf-8'>
         <title>Charis Martakis Portfolio</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
+        <link rel='stylesheet' type='text/css' media='screen' href='./style.css'>
         <!--<meta http-equiv='X-UA-Compatible' content='IE=edge'>-->
         <!--<script src='main.js'></script>-->
     </head>
 
     <body>
-        <section class="hero">
+        <section class="white-generic-card hero">
             <h1>Charalampos Martakis</h1>
             <h2>Aspiring Full-Stack Web Developer</h2>
             <img src="./assets/images/duck_button_logo.png" alt="Portrait of Charalampos Martakis" width="100" height="150"><br>
@@ -18,14 +19,14 @@
             <a href="https://www.linkedin.com/in/charis-martakis/" target="_blank">LinkedIn</a>
         </section>
 
-        <section>
+        <section class="white-generic-card">
             <h2>About Me</h2>
             <p>I’m a web content executive with a degree in Electrical & Electronics Engineering, now expanding my skills in web development and automation. I enjoy solving problems, working across teams, and building clean, user-friendly experiences.</p>
             <p>Currently, I’m learning JavaScript, React, and SQL to become a full-stack developer. I’m excited to apply my engineering background and new coding skills to create impactful web applications.</p>
             <a href="./public/resume.html" draggable="true">Learn more about me</a>
         </section>
 
-        <section>
+        <!-- <section class="white-generic-card">
             <h2>Skills</h2>
             <div class="skills-grid">
                 <span>Python</span>
@@ -41,42 +42,54 @@
                 <span>JSON</span>
 
             </div>
-        </section>
+        </section> -->
 
-        <section>
+        <section class="white-generic-card">
             <h2>Projects</h2>
             <div class="project-card">
                 <h3>Portfolio Website</h3>
                 <p>A personal website showcasing my skills, background, and future projects. (you are here already)</p>
             </div>
-            <div class="project-card">
+            <!-- <div class="project-card">
                 <h3>Birthday Invitation</h3>
                 <p>A fun and colorful invitation for my birthday party.</p>
                 <a href="./public/projects/birthday-invite.html" draggable="true">View Invitation</a>
-            </div>
-            <div class="project-card">
+            </div> -->
+            <!-- <div class="project-card">
                 <h3>Motivational Quote</h3>
                 <p>A simple webpage displaying a motivational quote to inspire visitors.</p>
                 <a href="./public/projects/motivational-quote.html" draggable="true">View Quote</a>
-            </div>
+            </div> -->
             <div class="project-card">
                 <h3>Greek Flag with CSS</h3>
-                <p>A creative project to recreate the Greek flag using only HTML and CSS.</p>
+                <p>A creative project to recreate the Greek flag using only <em>HTML</em> and <em>CSS</em>.</p>
                 <a href="./public/projects/greek-flag-css.html" draggable="true">View the Greek Flag</a>
             </div>
             <div class="project-card">
                 <h3>Flexbox Pricing Table</h3>
-                <p>A responsive pricing table layout using CSS Flexbox.</p>
+                <p>A responsive pricing table layout using <em>CSS Flexbox</em>.</p>
                 <a href="./public/projects/pricing-table.html" draggable="true">View Pricing Table</a>
             </div>
             <div class="project-card">
                 <h3>Piet Mondrian Painting</h3>
-                <p>A digital recreation of a Piet Mondrian painting using HTML and CSS Grid.</p>
+                <p>A digital recreation of a Piet Mondrian painting using <em>HTML</em> and <em>CSS Grid</em>.</p>
                 <a href="./public/projects/piet-Mondrian-painting.html" draggable="true">View Mondrian Painting</a>
             </div>
+            <div class="project-card">
+                <h3>Eshop with Bootstrap</h3>
+                <p>An e-commerce website built with <em>Bootstrap</em>, showcasing a variety of products.</p>
+                <a href="./public/projects/eshop-with-bootstrap.html" draggable="true">View Eshop</a>
+            </div>
+            <br>
+
+            <div class="skills-grid" style="justify-content: center; align-items: center; gap: 10px; flex-wrap: wrap; min-height: auto; margin-top: 20px;">
+                <span><a href="./public/projects.html" draggable="true">
+                        More projects here</a></span>
+            </div>
+
         </section>
 
-        <section>
+        <section class="white-generic-card">
             <h2>Contact</h2>
             <p>Get in touch:</p>
             <a href="mailto:charis.martakis@gmail.com" draggable="true">charis.martakis@gmail.com</a><br><br>
@@ -90,6 +103,6 @@
 
 
 
-        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>            
     </body>
 </html>
