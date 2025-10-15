@@ -1,106 +1,19 @@
+/* CSS across all pages*/
+
 body {
   font-family: Helvetica, sans-serif ;
-  /* DEFAULT COLOR: background-color: #0b7f9c;*/
   background-color: #3396D3;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  display: flex; 
-  overflow-x: hidden;
-  flex-direction: column;
-  min-height: 100vh;
-
-
 }
 
 header {
-  /* DEFAULT COLOR: background-color: #eaeaea;*/
   background-color: #EBCB90;
-  padding: 0px;
   text-align: center;
-  position: relative;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-  
 }
 
 footer {
-  /* DEFAULT COLOR: background-color: #eaeaea;*/
   background-color: #EBCB90;
-  padding: 20px;
-  text-align: center;
-  margin-top: auto;
   font-size: 14px;
-  color: #666;
-  clear: both;
-  
-}
-
-.white-generic-card {
- 
-  width: 90%;         
-  max-width: 690px;    
-  min-width: 0;        
-  margin: 40px auto;
-  padding: 20px;
-  /* DEFAULT COLOR: background-color: #fff;*/
-  background-color: #EEEEEE;
-  border-radius: 10px;
-}
-
-.generic-flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  min-height: 100vh;
-}
-
-.hero {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.hero img {
-  border-radius: 50%;
-  margin: 20px 0;
-}
-
-
-
-a {
-  display: inline-block;
-  margin: 0 10px;
-  text-decoration: none;
-  color: #0077cc;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #005fa3;
-}
-
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.skills-grid span {
-  /* DEFAULT COLOR: background-color: #eaeaea;*/
-  background-color: #91C4C3;
-  padding: 10px 15px;
-  border-radius: 8px;
-  font-weight: bold;
-}
-
-nav {
-  background-color: #222;
-  padding: 15px 0;
-  text-align: center;
-  width: 100%;
+  color: #544F43;
 }
 
 nav a {
@@ -109,30 +22,68 @@ nav a {
   margin: 0 18px;
   font-size: 18px;
   font-weight: 500;
-  transition: color 0.2s;
-  display: inline-block;
   padding: 6px 10px;
   border-radius: 4px;
 }
 
-nav a:hover,
-nav a.active {
-  background-color: #EBCB90;
-  color: #222;
-  text-decoration: none;
+nav a:hover {
+    border-radius: 4px;
+    background-color: #ddb56b;
 }
 
-@media (max-width: 600px) {
-  nav {
-    padding: 10px 0;
-  }
-  nav a {
-    display: block;
-    margin: 10px auto;
-    font-size: 20px;
-    width: fit-content;
-  }
+footer a:hover {
+    background-color: #ddb56b;
 }
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+  /* padding: 6px 3px;
+  border-radius: 40px; */
+}
+a:hover {
+  background-color: rgba(235, 203, 144, 0.5); /* subtle highlight */
+}
+
+/* Optional custom tweaks */
+section.bg-light {
+  background-color: #EEEEEE !important;
+}
+
+main .bg-light {
+  max-width: 850px;      
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+
+/* Other CSS*/
+
+/* index.html - Home  CSS */
+.hero-img {
+  object-fit: cover;
+  border: 4px solid #EBCB90; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-img:hover {
+   width: 180px;
+  height: 180px;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+
+}
+
+
+
+
+
+
 
 
 
@@ -238,111 +189,7 @@ div.white-stripe > p {
         height: 100%;
     }
 }
-/*Piet Mondrian painting project below*/
 
-.mondrian-grid {
-  display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(29, 1fr);
-  gap: 0px;
-  background-color: #fff;
-  border: 1px solid #111;
-  width: 50vw;
-  height: 50vw;
-  max-width: 700px;
-  max-height: 600px;
-  aspect-ratio: 1 / 1;
-  margin: 20px auto;
-  min-width: 250px;
-  min-height: 250px;
-}
-
-.mondrian-grid > div {
-  border: 3px solid #111;
-  box-sizing: border-box;
-}
-
-.mondrian-grid,
-.painting-container > img {
-  box-sizing: border-box;
-}
-
-
-.painting-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2vw;
-}
-
-.painting-container {
-  text-align: center;
-  
-}
-
-.painting-container > img {
-  width: 50vw;
-  height: 50vw;
-  max-width: 700px;
-  max-height: 600px;
-  min-width: 250px;
-  min-height: 250px;
-  aspect-ratio: 1 / 1;
-  margin: 0px auto;
-  border: 4px solid #111;
-  display: block;
-}
-
-.white { background-color: #fff; }
-.gray { background-color: #DCDCE6; }
-.black { background-color: #111; }
-.red { background-color: #EA413A; }
-.purple { background-color: #5F4EBE; }
-.yellow { background-color: #FFF00F; }
-
-
-.block1  { grid-column: 1 / 2; grid-row: 1 / 8; }
-.block2  { grid-column: 2 / 7; grid-row: 1 / 2; }
-.block3  { grid-column: 2 / 4; grid-row: 2 / 8; }
-.block4  { grid-column: 4 / 7; grid-row: 2 / 8; }
-.block5  { grid-column: 7 / 11; grid-row: 1 / 5; }
-.block6  { grid-column: 7 / 11; grid-row: 5 / 8; }
-.block7  { grid-column: 11 / 15; grid-row: 1 / 5; }
-.block8  { grid-column: 11 / 15; grid-row: 5 / 8; }
-.block9  { grid-column: 15 / -1; grid-row: 1 / 8; }
-
-.block10 { grid-column: 1 / 2; grid-row: 8 / 19 }
-.block11 { grid-column: 2 / 7; grid-row: 8 / 14; }
-.block12 { grid-column: 2 / 7; grid-row: 14 / 19; }
-.block13 { grid-column: 7 / 11; grid-row: 8 / 14; }
-.block14 { grid-column: 7 / 11; grid-row: 14 / 19; }
-.block15 { grid-column: 11 / 15; grid-row: 8 / 14; }
-.block16 { grid-column: 11 / 15; grid-row: 14 / 24; }
-.block17 { grid-column: 15 / 16; grid-row: 8 / 24; }
-.block18 { grid-column: 16 / 17; grid-row: 8 / 24; }
-
-.block19 { grid-column: 1 / 4; grid-row: 19 / 26; }
-.block20 { grid-column: 1 / 4; grid-row: 26 / -1;}
-.block21 { grid-column: 4 / 7; grid-row: 19 / 28; }
-.block22 { grid-column: 4 / 11; grid-row: 28 / -1; }
-.block23 { grid-column: 7 / 11; grid-row: 19 / 24; }
-.block24 { grid-column: 7 / 11; grid-row: 24 / 28; }
-.block25 { grid-column: 11 / 15; grid-row: 24 / 28; }
-.block26 { grid-column: 11 / 15; grid-row: 28 / -1;}
-.block27 { grid-column: 15 / -1; grid-row: 24 / -1; }
-
-
-.project-overview {
-  max-width: 1000px;
-  margin: 20px auto 20px auto;
-
-  text-align: center;
-}
-
-.project-overview p {
-  margin-bottom: 12px;
-  line-height: 1.4;
-}
 
 
 
