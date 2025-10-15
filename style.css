@@ -1,9 +1,35 @@
 /* CSS across all pages*/
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: Helvetica, sans-serif ;
+  /* background-image: url('./assets/images/surface-4373559.jpg'); */
+   /* background-image: url('./assets/images/repeating-chevrons.svg'); */
+   /* background-image: url('./assets/images/repeating-chevrons.svg'); */
+  /* background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center; */
   background-color: #3396D3;
+
+  display: flex;
+  flex-direction: column;
 }
+
+/* .test{
+    background-image: url('./assets/images/rain-body-wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+} */
+
+main {
+  flex: 1; /* pushes footer to the bottom */
+}
+
 
 header {
   background-color: #EBCB90;
@@ -15,6 +41,7 @@ footer {
   font-size: 14px;
   color: #544F43;
 }
+
 
 nav a {
   color: #EBCB90;
@@ -56,6 +83,11 @@ main .bg-light {
   margin-right: auto;
 }
 
+.btn-dark:hover {
+  background-color: #ddb56b;
+  color: #333;
+   border: none;
+}
 
 
 
@@ -78,6 +110,79 @@ main .bg-light {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 
 }
+
+/* projects.html - Projects CSS */
+.card {
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.card-title {
+  color: #333;
+  font-weight: 600;
+}
+
+.card-text {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.75rem;
+}
+
+.card-body .btn {
+    align-self: flex-start; /* left-aligns the button */
+  margin-top: auto;       /* pushes it to the bottom of the card body */
+  font-size: 0.875rem;    /* keeps button smaller */
+  padding: 6px 14px;      /* compact but readable */
+  border-radius: 6px;
+}
+
+.modal-content {
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.modal-body img {
+  max-width: 100%;       /* fit the modal width */
+  max-height: 60vh;      /* never taller than 60% of viewport height */
+  object-fit: contain;   /* no cropping — keep the full image */
+  display: block;
+  margin: 0 auto;        /* center horizontally */
+  border-radius: 8px;
+}
+
+.card-img-top,
+.modal-body img {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* .modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+} */
+
+
+
 
 
 
