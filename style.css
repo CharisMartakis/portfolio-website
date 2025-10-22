@@ -140,8 +140,10 @@ main .bg-light {
 .card-img-top {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  width: 100%;
   height: 200px;
-  object-fit: contain;
+  object-fit: cover; /* stretch/crop to fill the frame */
+  display: block;
 }
 
 .card-title {
@@ -285,7 +287,7 @@ span .learning-asterisk {
 .blue-stripe{
     width: 700px;
     height: 50px;
-    background-color: blue;
+    background-color: #0D5EAF;
 }
 
 .cross-container{
@@ -302,78 +304,52 @@ span .learning-asterisk {
     z-index: 1;
     width: 100px;
     height: 100px;
-    background-color: blue;
+    background-color: #0D5EAF;
 }
 
 div.white-stripe > p {
     margin: 0;
     padding: 15px;
     text-align: center;
-    color: blue;
+    color: #0D5EAF;
     font-weight: bold;
 }
 
-/*for the pricing-table project below*/
 
-.pricing-table-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding: 20px;
-    flex-wrap: wrap;
-    font-family: "Sono", sans-serif;
-}
-.pricing-plan {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    width: 300px;
-    padding: 20px;
-    text-align: center;
-}
-.plan-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-.plan-price {
-    font-size: 30px;
-    font-weight: bold;
-    margin: 10px 0;
-    
-}
-.plan-features {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-}
-.plan-features li {
-    margin: 5px 0;
-}
-.plan-button {
-    background-color: #0077cc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-.plan-button:hover {
-    background-color: #005fa3;
-}
-@media (max-width: 1250px) {
-    .pricing-table-container {
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-    }
-}
+/* pricing rules: prefer the newer, page-scoped selectors (.pricing-grid, .pricing-card)
+   and keep only the rules actually used by pages. Legacy selector names were
+   intentionally removed where they were not referenced to reduce CSS bloat. */
 
 
 
 
+
+/* Contact form styles */
+#contactForm .form-control {
+    padding: 0.8rem;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+}
+
+#contactForm .form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(235, 203, 144, 0.25);
+    border-color: #EBCB90;
+}
+
+#contactForm .form-label {
+    color: #3396D3;
+    margin-bottom: 0.5rem;
+}
+
+#contactForm .btn:hover {
+    background-color: #2980b9 !important;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+#contactForm .card-body {
+    background-color: #EEEEEE;
+    border-radius: 15px;
+}
 
 /* End of style.css */
-
-
