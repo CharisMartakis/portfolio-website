@@ -43,7 +43,7 @@ footer {
 }
 
 
-nav a {
+header nav a {
   color: #EBCB90;
   text-decoration: none;
   margin: 0 18px;
@@ -51,26 +51,41 @@ nav a {
   font-weight: 500;
   padding: 6px 10px;
   border-radius: 4px;
+  transition: background-color 0.2s ease;
 }
 
-nav a:hover {
+header nav a:hover {
     border-radius: 4px;
     background-color: #ddb56b;
 }
 
-footer a:hover {
-    background-color: #ddb56b;
+footer a {
+  display: inline-flex; /* so background fits around the icon */
+  align-items: center;
+  justify-content: center;
+  color: #EBCB90;
+  text-decoration: none;
+  padding: 6px 10px; /* same as header nav links */
+  border-radius: 4px;
+  transition: background-color 0.2s ease transform 0.2s ease; /* smooth hover */
 }
+
+footer a:hover {
+  background-color: #ddb56b;
+  transform: scale(1.05);
+}
+
 
 a {
   color: #0077cc;
   text-decoration: none;
+  transition: color 0.2s ease;
   /* padding: 6px 3px;
   border-radius: 40px; */
 }
 a:hover {
-  background-color: rgba(235, 203, 144, 0.5); /* subtle highlight */
-}
+color: #004c80; /* darker shade for hover */
+background-color: transparent; /* no background tint */}
 
 /* Optional custom tweaks */
 section.bg-light {
@@ -86,7 +101,7 @@ main .bg-light {
 .btn-dark:hover {
   background-color: #ddb56b;
   color: #333;
-   border: none;
+   border: 1px solid transparent;
 }
 
 
@@ -183,13 +198,73 @@ main .bg-light {
 
 
 
+/* resume.html - Resume */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-grid span {
+    background-color: #91C4C3;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.aside-skills .card-body .skills-grid {
+  gap: 8px;
+}
+.aside-skills .card {
+  border-radius: 8px;
+}
+
+/* Learning asterisk and legend */
+span .learning-asterisk {
+  color: #d9534f; /* Bootstrap danger-ish red */
+  font-weight: 700;
+  padding: 4px;
+}
+
+.learning-asterisk {
+  color: #d9534f; /* Bootstrap danger-ish red */
+  font-weight: 700;
+  padding: 4px;
+}
+
+.aside-skills .learning-legend {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Print-specific rules: hide header/footer and make main printable as a CV */
+@media print {
+  /* hide site chrome */
+  header, footer, .navbar, .site-footer, .navbar-toggler { display: none !important; }
+
+  /* ensure body prints white and uses the main content width */
+  body { background: #fff !important; color: #111 !important; }
+  main { box-shadow: none !important; background: transparent !important; }
+
+  /* make content use full page width but keep margins for print */
+  .page-container, .container { max-width: 720px !important; width: 100% !important; margin: 0 auto !important; }
+
+  /* avoid any backgrounds being suppressed by browser print settings */
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+}
 
 
-
-
-
-
-
+/* small decorative icon used in resume subtitle */
+.hero-icon {
+  display: inline-block;
+  margin-right: 0.5rem;
+  transform: translateY(-1px);
+  font-size: 1.05em;
+}
+.hero-icon:hover {
+  transform: translateY(-1px) scale(1.05);
+}
 
 
 /*for the greek-flag project below*/
@@ -300,3 +375,5 @@ div.white-stripe > p {
 
 
 /* End of style.css */
+
+

@@ -419,3 +419,5 @@ FodyWeavers.xsd
 
 #MY STUFF
 Misc/
+.vscode/
+.github/
