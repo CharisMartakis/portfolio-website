@@ -1,166 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset='utf-8'>
-        <title>Charis Martakis Resume</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' type='text/css' media='screen' href='../style.css'>
-        <!--<meta http-equiv='X-UA-Compatible' content='IE=edge'>-->
-        <!--<script src='main.js'></script>-->
-    </head>
+        <head>
+                <meta charset='utf-8'>
+                <title>Charis Martakis Resume</title>
+                <meta name='viewport' content='width=device-width, initial-scale=1'>
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+                <link rel='stylesheet' type='text/css' media='screen' href='../style.css'>
+                <link rel="icon" type="image/png" href="../assets/images/duck_button_logo.png">
+
+
+        </head>
 
     <body>
-        <header>
-            <h1>Charis Martakis - Resume</h1>
-            <nav>
-                <a href="../index.html" draggable="true">Home</a>
-                <a href="./projects.html" draggable="true">Projects</a>
-                <a href="./resume.html" draggable="true">About Me</a>
-                <a href="./contact.html" draggable="true">Contact</a>
-            </nav>
-        </header>
+        <!-------------------------------- header------------------------------------------------->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
 
-        <br><img src="../assets/images/duck_button_logo.png" alt="Portrait of Charalampos Martakis" width="100" height="150" style="display: block; margin: 0 auto;">
+                <!-- LEFT SECTION -->
+                <div class="d-flex align-items-center">
+                    <a class="navbar-brand ms-0 ps-0" href="../index.html">
+                        <img src="../assets/images/duck_button_logo.png" class="me-2" alt="Charis Martakis Logo"
+                            width="30" height="30">CMportfolio
+                    </a>
+                </div>
 
-        <section class="white-generic-card" alt="Summary of Charis Martakis" >
-            <h2>Summary of Charis Martakis</h2>
-            <p>I’m a web content executive based in Athens, Greece with an integrated master’s degree in Electrical & Electronics Engineering, now transitioning into a development-focused role.</p>
+                <!-- CENTER SECTION (NAV LINKS) -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./resume.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
 
-            <p>I’ve developed a strong understanding of programming concepts, Python scripting, JSON editing, localization workflows, and CMS-based content automation. At my current role in the iGaming industry, I collaborate with CRM, casino, and sports teams to manage large volumes of content, and I’ve even built Python automations to streamline internal processes.</p>
+                <!-- RIGHT SECTION -->
+                <div class="d-none d-lg-flex align-items-center">
 
-            <p>I’m currently expanding my skills in both front-end (HTML, CSS, JS, React) and back-end (Node.js, SQL) development. In addition, I actively maintain projects on GitHub to showcase my work and demonstrate my growing expertise in full-stack development.</p>
+                    <a href="https://github.com/CharisMartakis" class="m-0" target="_blank" aria-label="GitHub"><img
+                            src="../assets/images/github.svg" alt="GitHub" width="27" height="27">
+                    </a><a href="https://www.linkedin.com/in/charis-martakis/" class="ms-0 me-1" target="_blank"
+                        aria-label="LinkedIn"><img src="../assets/images/linkedin.svg" alt="LinkedIn" width="27"
+                            height="27"></a><img src="../assets/images/Charis-Martakis-photo.jpg" class="ms-1 me-0"
+                        alt="Portrait of Charalampos Martakis" width="32" height="32 " style="border-radius: 50%;">
+                </div>
 
-            <p>Driven by a strong eye for detail, a problem-solving mindset, and a passion for technology, I’m continuously building on my technical foundation and aiming to contribute to impactful, scalable solutions.</p>
+                <!-- TOGGLER (for mobile) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+<!-------------------------------- main  ------------------------------------------------->
+<main class="container my-5 page-container">
+    <div class="row g-4">
+        <aside class="col-md-4">
+            <div class="p-4 bg-light rounded shadow-sm sticky-aside combo-aside">
+                <img src="../assets/images/Charis-Martakis-photo.jpg" alt="photo" class="rounded-circle mb-3" width="110" height="110">
+                <h3 class="h5 mb-1">Charis Martakis</h3>
+                <p class="text-muted mb-2">Full-Stack Web Developer</p>
+                <ul class="list-unstyled small mb-3">
+                    <li>Email: charis.martakis@gmail.com</li>
+                    <li>Location: Athens, Greece</li>
+                </ul>
+                <button id="download-cv" class="btn btn-dark btn-sm" aria-label="Download CV as PDF">Download CV</button>
+            
+            <!-- Skills cards grouped by category (kept under the profile but visually separated) -->
+            <div class="mt-4 aside-skills">
+                <div class="card mb-3">
+                    <div class="card-body p-3">
+                        <h6 class="card-title mb-2">Languages & Frameworks</h6>
+                        <div class="skills-grid">
+                            <span>Python</span>
+                            <span>HTML</span>
+                            <span>CSS3</span>
+                            <span>Bootstrap</span>
+                            <span>JavaScript<span class="learning-asterisk" aria-hidden="true">*</span></span>
+                            <span>React<span class="learning-asterisk" aria-hidden="true">*</span></span>
+                            <span>Node.js<span class="learning-asterisk" aria-hidden="true">*</span></span>
+                            <span>SQL<span class="learning-asterisk" aria-hidden="true">*</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-body p-3">
+                        <h6 class="card-title mb-2">Tools & Platforms</h6>
+                        <div class="skills-grid">
+                            <span>Visual Studio Code</span>
+                            <span>PyCharm</span>
+                            <span>GitHub/Git</span>
+                            <span>WordPress/WooCommerce</span>
+                            <span>Linux</span>
+                            <span>Raspberry Pi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-body p-3">
+                        <h6 class="card-title mb-2">Other Technical Areas</h6>
+                        <div class="skills-grid">
+                            <span>Content QA</span>
+                            <span>Email template editing</span>
+                            <span>Internal CMS tools</span>
+                            <span>Localization workflows</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-body p-3">
+                        <h6 class="card-title mb-2">Languages</h6>
+                        <div class="skills-grid">
+                            <span>Greek (native)</span>
+                            <span>English (fluent)</span>
+                            <span>Polish (basic)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-0">
+                    <div class="card-body p-3">
+                        <h6 class="card-title mb-2">Soft Skills</h6>
+                        <div class="skills-grid">
+                            <span>Attention to detail</span>
+                            <span>Creativity</span>
+                            <span>Problem solving</span>
+                            <span>Teamwork</span>
+                            <span>Motivation to learn</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="learning-legend text-muted mt-2"> <span class="learning-asterisk">*</span> in progress</div>
+            </div>
+
+            </div>
+        </aside>
+
+        <section class="col-md-8">
+            <div class="card p-3 mb-4">
+                <h3>Summary</h3>
+                <p>I’m a web content executive based in Athens, Greece with an integrated master’s degree in Electrical & Electronics Engineering, now transitioning into a development-focused role.</p>
+                <p>I’ve developed a strong understanding of programming concepts, Python scripting, JSON editing, localization workflows, and CMS-based content automation. At my current role in the iGaming industry, I collaborate with CRM, casino, and sports teams to manage large volumes of content, and I’ve even built Python automations to streamline internal processes.</p>
+                <p>I’m currently expanding my skills in both front-end (HTML, CSS, JS, React) and back-end (Node.js, SQL) development. In addition, I actively maintain projects on GitHub to showcase my work and demonstrate my growing expertise in full-stack development.</p>
+                <p>Driven by a strong eye for detail, a problem-solving mindset, and a passion for technology, I’m continuously building on my technical foundation and aiming to contribute to impactful, scalable solutions.</p>
+            </div>
+
+            <div class="card p-3 mb-4">
+                <h3>Education</h3>
+                <ul>
+                    <li>
+                        <strong>Integrated Master’s Degree in Electrical & Electronics Engineering</strong> - University of West Attica (2023)
+                        <ul>
+                            <li>Graduated with a GPA of 7.4/10.</li>
+                            <li>Diploma Thesis title: Study and development of οbject detection software using Raspberry Pi 4</li>
+                            <li>Diploma Thesis grade: 10/10</li>
+                        </ul>
+                    </li>
+                    <li class="mt-3">
+                        <strong>Full-Stack Web Development Bootcamp</strong> - Codecademy (2025 - Present)
+                        <ul>
+                            <li>Comprehensive curriculum covering HTML, CSS, JavaScript, React, Node.js, SQL and more</li>
+                            <li>Hands-on projects</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card p-3 mb-4">
+                <h3>Work Experience</h3>
+                <ul>
+                    <li>
+                        <strong>Web Content Executive</strong> - Campeon Gaming (12/2023 - Present)
+                        <ul>
+                            <li>Manage multilingual content for casino, sports, and promotional pages using in-house CMS tools</li>
+                            <li>Collaborate with CRM, casino and sport teams to prepare and launch new brands across multiple regions and licenses</li>
+                            <li>Handle content localization and translation using JSON files and Locize</li>
+                            <li>Conduct QA checks to verify structure, layout, and responsive display across devices</li>
+                            <li>Create, edit and upload promotions, banners, and hidden landing pages in brand-specific back-office systems</li>
+                            <li>Use Marketing comms apps to prepare and deliver promotional communications via sms or email</li>
+                            <li>Sportsbook Top Leagues & Top Events configuration</li>
+                            <li>Contribute to the soft-launch of new international brands</li>
+                            <li>Developed offline Python scripts to reduce manual workload and streamline processes</li>
+                        </ul>
+                    </li>
+                    <li class="mt-3">
+                        <strong>eShop Administrator and Technical Support Provider</strong> - COSMODENTAL (06/2021 - 08/2022)
+                        <ul>
+                            <li>Maintained and updated WordPress/WooCommerce dental store including products, pricing, descriptions, and front-end visual elements</li>
+                            <li>Improved UI/UX using plugins and custom CSS styling</li>
+                            <li>Resolved basic website functionality issues and handled user inquiries</li>
+                            <li>Designed marketing visuals and promotional banners using Adobe Photoshop</li>
+                        </ul>
+                    </li>
+                    <li class="mt-3">
+                        <strong>Junior Software Developer</strong> - Aratos Technologies S.A. (05/2018 - 02/2019)
+                        <ul>
+                            <li>Built and maintained internal-use web tools using HTML, CSS, PHP, and Python</li>
+                            <li>Worked on both front-end and back-end tasks including interface layout and system logic</li>
+                            <li>Contributed to user documentation and application manuals</li>
+                            <li>Used tools such as OpenCV, Apache, Bash, and Putty in a Linux environment</li>
+                            <li>Supported research projects involving network protocols, full-stack development and Raspberry Pi hardware</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Technical Skills moved to left aside to fill column -->
+
         </section>
-
-        <section class="white-generic-card" alt="Education of Charis Martakis">
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <strong>Integrated Master’s Degree in Electrical & Electronics Engineering</strong> - University of West Attica (2023)
-                    <ul>
-                        <li>Graduated with a GPA of 7.4/10.</li>
-                        <li>Diploma Thesis title: Study and development of οbject detection software using Raspberry Pi 4</li>
-                        <li>Diploma Thesis grade: 10/10</li>
-                    </ul>
-                </li><br>
-
-                <li>
-                    <strong>Full-Stack Web Development Bootcamp</strong> - Codecademy (2025 - Present)
-                    <ul>
-                        <li>Comprehensive curriculum covering topics like HTML, CSS, JavaScript, React, Node.js, SQL and more</li>
-                        <li>Hands-on projects</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-        <section class="white-generic-card" alt="Work experience" >
-            <h2>Work Experience</h2>
-            <ul>
-                <li>
-                    <strong>Web Content Executive</strong> - Campeon Gaming (12/2023 - Present)
-                    <ul>
-                        <li>Manage multilingual content for casino, sports, and promotional pages using in-house CMS tools</li>
-                        <li>Collaborate with CRM, casino and sport teams to prepare and launch new brands across multiple regions and licenses</li>
-                        <li>Handle content localization and translation using JSON files and Locize</li>
-                        <li>Conduct QA checks to verify structure, layout, and responsive display across devices</li>
-                        <li>Create, edit and upload promotions, banners, and hidden landing pages in brand-specific back-office systems</li>
-                        <li>Use Marketing comms apps to prepare and deliver promotional communications via sms or email</li>
-                        <li>Sportsbook Top Leagues & Top Events configuration</li>
-                        <li>Contribute to the soft-launch of new international brands</li>
-                        <li>Developed offline Python scripts to reduce manual workload and streamline processes</li>
-                    </ul>
-                </li><br>
-
-                <li>
-                    <strong>eShop Administrator and Technical Support Provider</strong> - COSMODENTAL (06/2021 - 08/2022)
-                    <ul>
-                        <li>Maintained and updated WordPress/WooCommerce dental store including products, pricing, descriptions, and front-end visual elements</li>
-                        <li>Improved UI/UX using plugins and custom CSS styling</li>
-                        <li>Resolved basic website functionality issues and handled user inquiries</li>
-                        <li>Designed marketing visuals and promotional banners using Adobe Photoshop</li>
-                    </ul>
-                </li><br>
-                <li>
-                    <strong>Junior Software Developer</strong> - Aratos Technologies S.A. (05/2018 - 02/2019)
-                    <ul>
-                    <li>Built and maintained internal-use web tools using HTML, CSS, PHP, and Python</li>
-                    <li>Worked on both front-end and back-end tasks including interface layout and system logic</li>
-                    <li>Contributed to user documentation and application manuals</li>
-                    <li>Used tools such as OpenCV, Apache, Bash, and Putty in a Linux environment</li>
-                    <li>Supported research projects involving network protocols, full-stack development and Raspberry Pi hardware</li>
-
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-        <section class="white-generic-card" alt="Technical Skills of Charis Martakis">
-            <h2>Technical Skills</h2>
-            <h3>Languages & Frameworks</h3>
-            <div class="skills-grid">
-                <span>Python</span>
-                <span>HTML</span>
-                <span>CSS3</span>
-                <span>Git (basic)</span>
-                <span>JavaScript (learning)</span>
-                <span>React (learning)</span>
-                <span>Node.js (learning)</span>
-                <span>SQL (learning)</span>
-                <span>C++</span>
-                <span>Bash</span>
-                <span>JSON</span>
-            </div>
-    
-            <h3>Tools & Platforms</h3>
-            <div class="skills-grid">
-                <span>Visual Studio Code</span>
-                <span>PyCharm</span>
-                <span>GitHub/Git</span>
-                <span>WordPress/WooCommerce</span>
-                <span>Linux</span>
-                <span>Raspberry Pi</span>
-                <span>Customer.io</span>
-                <span>FastTrack</span>
-                <span>Locize</span>
-                <span>Adobe Photoshop</span>
+    </div>
+</main>
+<!-------------------------------- footer----------------------------------------------- -->
+    <footer class="site-footer w-100 py-2 px-3">
+        <div class="row align-items-center text-center text-md-start gx-0">
+            <div class="col-12 col-md-4 mb-3 mb-md-0">
+                <p class="mb-0">© 2025 Charis Martakis. All Rights Reserved.</p>
             </div>
 
-            <h3>Other Technical Areas</h3>
-            <div class="skills-grid">
-                <span>Linux OS</span>
-                <span>Content QA</span>
-                <span>Email template editing</span>
-                <span>Internal CMS tools</span>
-                <span>Localization workflows using Locize & JSON</span>
+            <div class="col-12 col-md-4 mb-3 mb-md-0 text-center">
+                <a href="../index.html"
+                    class="d-inline-flex align-items-center justify-content-center text-decoration-none">
+                    <img src="../assets/images/duck_button_logo.png" alt="Duck Button Logo" width="32" height="32">
+                </a>
             </div>
 
-            <h3>Languages</h3>
-            <div class="skills-grid">
-                <span>Greek (native)</span>
-                <span>English (fluent)</span>
-                <span>Polish (basic)</span>
+            <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end">
+                <ul class="nav list-unstyled d-flex mb-0">
+                    <li>
+                        <a href="https://github.com/CharisMartakis" aria-label="GitHub">
+                            <img src="../assets/images/github.svg" alt="GitHub" width="27" height="27">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/charis-martakis/" aria-label="LinkedIn">
+                            <img src="../assets/images/linkedin.svg" alt="LinkedIn" width="27" height="27">
+                        </a>
+                    </li>
+
+                </ul>
             </div>
-
-            <h3>Soft Skills</h3>
-            <div class="skills-grid">
-                <span>Attention to detail</span>
-                <span>Creativity</span>
-                <span>Problem solving</span>
-                <span>Teamwork</span>
-                <span>Motivation to learn</span>
-            </div>
-
-        </section>
+        </div>
+    </footer>
 
 
-        <footer>
-            <p>© 2025 Charis Martakis. All Rights Reserved.</p>
-            <p><a href="../index.html" draggable="true">Back to Home</a></p>
-        </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+                <script>
+                // Open a new window with only the main CV content, include styles, trigger print, then close.
+                (function(){
+                    function printResumePDF(e){
+                        if(e) e.preventDefault();
+                        var main = document.querySelector('main');
+                        if(!main) return alert('Printable content not found.');
+                        // compute base href so relative asset paths resolve correctly in new window
+                        var baseHref = location.href.substring(0, location.href.lastIndexOf('/')+1);
+                        // collect stylesheet links from this document
+                        var cssLinks = Array.from(document.querySelectorAll('link[rel="stylesheet"]')).map(function(l){ return l.href; });
+                        var headExtras = '<base href="'+baseHref+'">' + cssLinks.map(function(h){ return '<link rel="stylesheet" href="'+h+'">'; }).join('');
 
+                        var w = window.open('', '_blank');
+                        if(!w) { alert('Popup blocked. Please allow popups for this site to download the PDF.'); return; }
+                        var html = '<!doctype html><html><head><meta charset="utf-8"><title>'+ (document.title || 'CV') +'</title>'+ headExtras +
+                            '<style>body{margin:20px; background:#fff; color:#111;} .page-container{max-width:850px; margin:0 auto;} @media print{@page{size:auto}} </style>'+
+                            '</head><body>' + main.innerHTML +
+                            '<script>window.onload=function(){ setTimeout(function(){ window.print(); }, 150); }; window.onafterprint=function(){ window.close(); }<\/script>'+
+                            '</body></html>';
+                        w.document.open();
+                        w.document.write(html);
+                        w.document.close();
+                    }
 
-        
+                    document.addEventListener('DOMContentLoaded', function(){
+                        var btn = document.getElementById('download-cv');
+                        if(btn) btn.addEventListener('click', printResumePDF);
+                    });
+                })();
+                </script>
     </body>
 </html>
