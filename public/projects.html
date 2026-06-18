@@ -35,7 +35,7 @@
                             <a class="nav-link active" href="./projects.html">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./resume.html">About</a>
+                            <a class="nav-link" href="./resume.html">Resume</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./contact.html">Contact</a>
@@ -56,7 +56,7 @@
 
                 <!-- TOGGLER (for mobile) -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -83,6 +83,7 @@
                             clean, modern layout. JavaScript (and later a React-based rewrite) will be added in future
                             iterations to introduce interactive features.
                         </p>
+                        <p class="small text-muted mt-2 mb-1">Stack: HTML5 · CSS3 · Bootstrap</p>
                         <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#project1Modal" aria-controls="project1Modal" aria-expanded="false">
                             Details
                         </button>
@@ -100,6 +101,7 @@
                             explores precise layout techniques, responsive scaling, and how to craft flags with minimal
                             markup and no images.
                         </p>
+                        <p class="small text-muted mt-2 mb-1">Stack: HTML5 · CSS3 · Grid</p>
                         <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#project2Modal" aria-controls="project2Modal" aria-expanded="false">Details</button>
                     </div>
                 </div>
@@ -114,6 +116,7 @@
                             A responsive pricing table built primarily with CSS Flexbox. Demonstrates column
                             layouts, feature lists, and responsive stacking for mobile devices.
                         </p>
+                        <p class="small text-muted mt-2 mb-1">Stack: HTML5 · CSS3 · Flexbox</p>
                         <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#project3Modal" aria-controls="project3Modal" aria-expanded="false">Details</button>
                     </div>
                 </div>
@@ -129,7 +132,8 @@
                             A CSS Grid recreation inspired by Piet Mondrian — demonstrates responsive grid layout
                             and composition techniques.
                         </p>
-                        <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#project4Modal" aria-controls="#project4Modal" aria-expanded="false">Details</button>
+                        <p class="small text-muted mt-2 mb-1">Stack: HTML5 · CSS3 · Grid</p>
+                        <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#project4Modal" aria-controls="project4Modal" aria-expanded="false">Details</button>
                     </div>
                 </div>
             </div>
@@ -144,7 +148,53 @@
                             My first JavaScript project! An interactive dice game that demonstrates DOM manipulation,
                             event handling, and dynamic content updates. Roll the dice and see who wins!
                         </p>
+                        <p class="small text-muted mt-2 mb-1">Stack: HTML5 · CSS3 · JavaScript</p>
                         <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#project5Modal" aria-controls="project5Modal" aria-expanded="false">Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 (Drum Kit) -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title">Drum Kit</h5>
+                        <p class="card-text">
+                            An interactive drum kit playable with keyboard keys or mouse clicks. Demonstrates event
+                            listeners, audio playback, and CSS button animations triggered by JavaScript.
+                        </p>
+                        <p class="small text-muted mt-2 mb-1">Stack: HTML5 · CSS3 · JavaScript</p>
+                        <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#project6Modal" aria-controls="project6Modal" aria-expanded="false">Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 7 (Face Mask Detection) -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title">Face Mask Detection</h5>
+                        <p class="card-text">
+                            Diploma thesis: a real-time AI system detecting whether a person is wearing a face mask,
+                            including a TFLite version optimised for Raspberry Pi 4 edge deployment.
+                        </p>
+                        <p class="small text-muted mt-2 mb-1">Stack: Python · TensorFlow/Keras · OpenCV · TFLite · Raspberry Pi</p>
+                        <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#project7Modal" aria-controls="project7Modal" aria-expanded="false">Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 8 (Oh My Savior Chrome Extension) -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title">Oh My Savior <span class="badge bg-secondary ms-1" style="font-size: 0.65rem;">Private</span></h5>
+                        <p class="card-text">
+                            A personal Chrome extension acting as a cloud-synced library. Save YouTube videos,
+                            web pages, and rich-text notes with drag-and-drop, categories, and real-time Supabase sync.
+                        </p>
+                        <p class="small text-muted mt-2 mb-1">Stack: TypeScript · React · WXT · Supabase</p>
+                        <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#project8Modal" aria-controls="project8Modal" aria-expanded="false">Details</button>
                     </div>
                 </div>
             </div>
@@ -312,11 +362,79 @@
         </div>
     </div>
 
-    
+    <!-- Project 6 Modal (Drum Kit) -->
+    <div class="modal fade" id="project6Modal" tabindex="-1" aria-labelledby="project6ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title" id="project6ModalLabel">Drum Kit — Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>An interactive drum kit that responds to both keyboard key presses and mouse clicks. Each pad triggers a drum sound and plays a short CSS press animation on activation.</p>
+                    <ul>
+                        <li>Technologies: HTML5, CSS3, JavaScript</li>
+                        <li>Keyboard (keydown) and click event listeners</li>
+                        <li>Audio playback via the HTMLAudioElement API</li>
+                        <li>CSS class toggling to animate button presses</li>
+                    </ul>
+                    <p class="mt-2 small text-muted">Part of the Angela Yu Full-Stack Web Development Bootcamp — JavaScript DOM section.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="projects/drum-kit.html" target="_blank" rel="noopener" class="btn btn-dark">Open Project Page</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                            <!--  -->
+    <!-- Project 7 Modal (Face Mask Detection) -->
+    <div class="modal fade" id="project7Modal" tabindex="-1" aria-labelledby="project7ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title" id="project7ModalLabel">Face Mask Detection — Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Diploma thesis project: a real-time face mask detection system built with Python and TensorFlow/Keras. The model classifies whether a person is wearing a mask using a webcam feed. A TFLite-optimised version was also developed for Raspberry Pi 4 edge deployment.</p>
+                    <ul>
+                        <li>Technologies: Python, TensorFlow/Keras, OpenCV, TFLite, Raspberry Pi 4</li>
+                        <li>Trained a custom CNN model on a labelled image dataset</li>
+                        <li>Real-time inference with OpenCV for webcam capture and display</li>
+                        <li>TFLite version optimised for resource-constrained edge devices</li>
+                        <li>Thesis grade: 10/10</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/CharisMartakis/face_mask_detection" target="_blank" rel="noopener" class="btn btn-dark">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
+    <!-- Project 8 Modal (Oh My Savior) -->
+    <div class="modal fade" id="project8Modal" tabindex="-1" aria-labelledby="project8ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title" id="project8ModalLabel">Oh My Savior — Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>A personal Chrome extension acting as a cloud-synced personal library. Built with WXT (a modern MV3 extension framework) and React, with Supabase for auth, database, and storage.</p>
+                    <ul>
+                        <li>Technologies: TypeScript, React, WXT (MV3), Supabase, dnd-kit, Tiptap</li>
+                        <li>YT Saver: save YouTube videos with thumbnails</li>
+                        <li>PG Saver: save any web page with screenshot</li>
+                        <li>NT Saver: rich-text notes with Tiptap editor</li>
+                        <li>Drag-and-drop reordering, categories, real-time sync across devices</li>
+                        <li>Trash with 7-day auto-purge for soft-deleted items</li>
+                    </ul>
+                    <p class="mt-2 small text-muted">Private repository — source not publicly available.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     </main>
     <!-------------------------------- footer----------------------------------------------- -->
