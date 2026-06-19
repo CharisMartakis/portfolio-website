@@ -1,14 +1,15 @@
-# CMportfolio — Charis Martakis Portfolio Website
+# CMportfolio - Charis Martakis Portfolio Website
 
-A personal portfolio website built by **Charis Martakis** while following Angela Yu's *The Complete Full-Stack Web Developer Bootcamp* course. The project is intentionally built manually with minimal AI assistance to reinforce hands-on learning.
+A personal portfolio website built by **Charis Martakis** while progressing through Angela Yu's *The Complete Full-Stack Web Development Bootcamp*. The site is a living showcase of my web development learning, professional background, selected projects, and contact information.
 
-Live repo: [github.com/CharisMartakis/portfolio-website](https://github.com/CharisMartakis/portfolio-website)
+- Live site: [charismartakis.github.io/portfolio-website](https://charismartakis.github.io/portfolio-website/)
+- Repository: [github.com/CharisMartakis/portfolio-website](https://github.com/CharisMartakis/portfolio-website)
 
 ---
 
 ## Purpose
 
-This website serves as a living showcase of progress through the bootcamp. Each section and project was coded by hand. As new skills are learned (JavaScript, React, Node.js, SQL), they get added here.
+This website documents my transition from web content operations into front-end development, QA/test automation, and technical tooling. It combines course projects, professional experience, and selected personal/internal projects as my skills grow.
 
 ---
 
@@ -16,12 +17,12 @@ This website serves as a living showcase of progress through the bootcamp. Each 
 
 | Layer | Technology |
 |---|---|
-| Markup | HTML5 (semantic) |
+| Markup | HTML5 |
 | Styling | Custom CSS3 + Bootstrap 5.3.8 |
 | Interactivity | Vanilla JavaScript |
-| Fonts | Helvetica (system font) |
-| Icons | SVG (GitHub, LinkedIn) |
-| Hosting | GitHub Pages (planned) |
+| Fonts | Helvetica/system fonts |
+| Icons | SVG assets |
+| Hosting | GitHub Pages |
 
 ---
 
@@ -29,68 +30,79 @@ This website serves as a living showcase of progress through the bootcamp. Each 
 
 | Role | Hex |
 |---|---|
-| Page background | `#3396D3` (blue) |
-| Header / Footer | `#EBCB90` (warm yellow) |
-| Card / Section background | `#EEEEEE` (light gray) |
-| Hover accent | `#ddb56b` (darker yellow) |
-| Body text | Helvetica, sans-serif |
+| Page background | `#3396D3` |
+| Header / Footer | `#EBCB90` |
+| Card / Section background | `#EEEEEE` |
+| Hover accent | `#ddb56b` |
 
 ---
 
 ## Project Structure
 
-```
+```text
 portfolio-website/
-├── index.html               ← Home page (hero, about, project previews, contact teaser)
-├── style.css                ← Shared CSS for all pages
-├── assets/
-│   ├── images/
-│   │   ├── duck_button_logo.png   ← Site logo / favicon
-│   │   ├── Charis-Martakis-photo.jpg
-│   │   ├── github.svg / linkedin.svg
-│   │   ├── dices/                 ← dice1–6.png (used by Dice Game)
-│   │   └── drum-kit/              ← drum pad images (used by Drum Kit)
-│   └── sounds/
-│       └── drum-kit/              ← .mp3 files for drum pads
-├── public/
-│   ├── projects.html        ← Project gallery with Bootstrap cards + modals
-│   ├── resume.html          ← About / CV page with sidebar skills layout
-│   ├── contact.html         ← Contact form (UI only — backend pending)
-│   └── projects/
-│       ├── greek-flag-css.html       ← Pure CSS Greek flag (Grid)
-│       ├── pricing-table.html        ← Flexbox pricing table
-│       ├── piet-Mondrian-painting.html ← CSS Grid Mondrian recreation
-│       ├── eshop-with-bootstrap.html ← Bootstrap e-shop layout
-│       ├── dice-game.html            ← JS dice game (DOM + Math.random)
-│       └── drum-kit.html             ← JS drum kit (keyboard + click events)
-└── Misc/                    ← Scratchpad files (not part of the live site)
+|-- index.html
+|-- style.css
+|-- README.md
+|-- assets/
+|   |-- images/
+|   |   |-- duck_button_logo.png
+|   |   |-- Charis-Martakis-photo.jpg
+|   |   |-- github.svg
+|   |   |-- linkedin.svg
+|   |   |-- dices/
+|   |   `-- drum-kit/
+|   `-- sounds/
+|       `-- drum-kit/
+`-- public/
+    |-- projects.html
+    |-- resume.html
+    |-- contact.html
+    `-- projects/
+        |-- greek-flag-css.html
+        |-- pricing-table.html
+        |-- piet-Mondrian-painting.html
+        |-- eshop-with-bootstrap.html
+        |-- dice-game.html
+        `-- drum-kit.html
 ```
 
 ---
 
 ## Pages Overview
 
-### `index.html` — Home
-- Hero section: name, title, photo, social links
-- About Me: short bio paragraph
-- Projects preview: 4 card grid linking to individual pages
-- Contact teaser: email link + link to contact form
+### `index.html` - Home
 
-### `public/projects.html` — Projects Gallery
-- Bootstrap card grid (col-12 / col-md-6 / col-lg-4)
-- Each card has a "Details" button that opens a Bootstrap modal
-- Projects currently listed: Portfolio Website, Greek Flag, Pricing Table, Mondrian, Dice Game
-- **TODO**: Add Drum Kit card + modal
+- Hero section with name, role, profile image, and social links
+- Short About Me section
+- Project preview cards
+- Contact teaser with email and contact form link
 
-### `public/resume.html` — About / CV
-- Two-column layout: sticky sidebar (photo + skills) + main timeline
-- Skills grouped by category: Languages/Frameworks, Tools, Other Technical, Languages, Soft Skills
-- `*` asterisk marks skills currently being learned
-- "Download CV" button present (JS not yet wired up)
+### `public/projects.html` - Projects Gallery
 
-### `public/contact.html` — Contact
-- Contact form UI (name, email, subject, message fields)
-- **Not functional yet** — note says backend integration is in progress
+- Bootstrap card grid with responsive columns
+- Project detail modals
+- Currently highlights:
+  - Oh My Savior
+  - Face Mask Detection
+  - Personal Portfolio
+  - Greek Flag (CSS)
+  - Pricing Table
+  - Piet Mondrian Painting
+  - Dice Game
+
+### `public/resume.html` - Resume / CV
+
+- Two-column layout with sidebar profile, links, and grouped skills
+- Main content with summary, education, and work experience
+- Skills grouped by category
+- Asterisk marks skills currently being learned
+- Download CV button opens a print/PDF-friendly resume view
+
+### `public/contact.html` - Contact
+
+- Contact form UI
+- Backend integration is still pending
 - Email fallback: `charis.martakis@gmail.com`
 
 ---
@@ -99,13 +111,15 @@ portfolio-website/
 
 | # | Project | Tech Used | Status |
 |---|---|---|---|
-| 1 | Portfolio Website | HTML, CSS, Bootstrap, JS | In progress |
-| 2 | Greek Flag (CSS) | HTML, CSS Grid | Complete |
-| 3 | Pricing Table | HTML, CSS Flexbox | Complete |
-| 4 | Piet Mondrian Painting | HTML, CSS Grid | Complete |
-| 5 | E-shop with Bootstrap | HTML, Bootstrap | Complete |
-| 6 | Dice Game | HTML, CSS, JavaScript | Complete |
-| 7 | Drum Kit | HTML, CSS, JavaScript | Complete |
+| 1 | Oh My Savior | TypeScript, React, WXT, Supabase | Private / showcased |
+| 2 | Face Mask Detection | Python, TensorFlow/Keras, OpenCV, TFLite, Raspberry Pi | Complete |
+| 3 | Personal Portfolio | HTML, CSS, Bootstrap, JavaScript | In progress |
+| 4 | Greek Flag (CSS) | HTML, CSS Grid | Complete |
+| 5 | Pricing Table | HTML, CSS Flexbox | Complete |
+| 6 | Piet Mondrian Painting | HTML, CSS Grid | Complete |
+| 7 | E-shop with Bootstrap | HTML, Bootstrap | Complete |
+| 8 | Dice Game | HTML, CSS, JavaScript | Complete |
+| 9 | Drum Kit | HTML, CSS, JavaScript | Complete page / not yet listed in gallery |
 
 ---
 
@@ -116,74 +130,65 @@ portfolio-website/
 - **LinkedIn**: [linkedin.com/in/charis-martakis](https://www.linkedin.com/in/charis-martakis/)
 - **GitHub**: [github.com/CharisMartakis](https://github.com/CharisMartakis)
 - **Location**: Athens, Greece
-- **Background**: Integrated Master's in Electrical & Electronics Engineering; currently working as Web Content Executive while transitioning to full-stack development
+- **Background**: Integrated Master's in Electrical & Electronics Engineering; Web Content Specialist expanding into front-end development, QA/test automation, and technical tooling
 
 ---
 
-## Version History & Changelog
+## Version History
 
-### Version 0.1 — Pure HTML & CSS (branch: `Version0.1`)
-Built entirely without Bootstrap. Focused on learning raw HTML structure and hand-written CSS.
+### Version 0.1 - Pure HTML & CSS
 
-**What was built in this version (in order):**
-1. Initial site scaffold — `index.html`, `style.css`, basic `resume.html`
-2. Replaced "About" page with a proper `resume.html` (CV-style layout)
-3. **Project: Greek Flag** — pure CSS recreation using Grid
-4. **Project: Pricing Table** — responsive layout using Flexbox
-5. **Project: Piet Mondrian Painting** — CSS Grid composition
-6. Added `projects.html` page to list projects (early Bootstrap experiment here)
-7. **Project: E-shop with Bootstrap** — first Bootstrap-heavy project
+Initial hand-built version focused on raw HTML structure and custom CSS.
 
----
+- Created the first home page, shared stylesheet, and resume page
+- Added early course projects:
+  - Greek Flag
+  - Pricing Table
+  - Piet Mondrian Painting
+  - E-shop with Bootstrap
 
-### Version 0.2 — Bootstrap Redesign (branch: `Version0.2`)
-A full redesign of the entire site using Bootstrap 5. Every page was rebuilt or heavily refactored. This is when the site started looking professional.
+### Version 0.2 - Bootstrap Redesign
 
-**What changed vs Version 0.1:**
-- Completely rewrote `style.css` — removed old manual CSS, rebuilt around Bootstrap utilities
-- Rebuilt `index.html` with Bootstrap grid: hero section, about, projects preview, contact teaser
-- Rebuilt `resume.html` with sidebar + main-column two-column layout and skills cards
-- Rebuilt `projects.html` with Bootstrap card grid + modals for each project
-- Built `contact.html` — full form UI (name, email, subject, message)
-- Added screenshot images for all projects (used as card thumbnails)
-- Added profile photo, doge image, GitHub/LinkedIn SVG icons
-- Removed two early Misc projects (`birthday-invite.html`, `motivational-quote.html`) from public pages
-- Published the site via GitHub Pages (CNAME was added/tweaked)
+Rebuilt the site around Bootstrap 5 and a cleaner visual layout.
 
----
+- Reworked the home page with Bootstrap grid/layout utilities
+- Rebuilt the resume page with sidebar skills and main content
+- Added project cards and Bootstrap modals
+- Added the contact page UI
+- Added project screenshots and social/profile assets
+- Published via GitHub Pages
 
-### Version 0.3 — JavaScript & Interactivity (branch: `develop`, in progress)
-Learning JavaScript and DOM manipulation from the course, then implementing it in the site.
+### Version 0.3 - JavaScript & Portfolio Expansion
 
-**What is being built in this version:**
-- **Project: Dice Game** — DOM manipulation, `Math.random()`, dynamic image swapping
-- **Project: Drum Kit** — keyboard events, click events, audio playback, CSS animation on keypress
-- More JS projects to be added as the course progresses
-- Contact form backend (planned)
-- CV download button (planned)
+Current in-progress version focused on JavaScript, interactivity, and stronger project presentation.
+
+- Added Dice Game
+- Added Drum Kit project page
+- Added Face Mask Detection thesis project to the gallery
+- Added Oh My Savior private extension showcase
+- Updated resume content to match the latest CV direction
+- Wired the Download CV button to a print/PDF-friendly view
 
 ---
 
 ## Known Issues / TODOs
 
-- [ ] Contact form has no backend — needs a service like Formspree, EmailJS, or a Node.js backend
-- [ ] "Download CV" button on resume.html is not wired up yet
-- [ ] Drum Kit project page exists but is not listed on the home page or in the projects.html gallery
-- [ ] Copyright year in footer says 2025 — should be updated to 2026
-- [ ] `aria-controls` attribute in some nav togglers incorrectly includes `#` prefix (minor HTML bug)
-- [ ] Hero image hover in CSS changes `width`/`height` directly (causes layout shift) — should use `transform: scale()` only
+- [ ] Contact form has no backend yet
+- [ ] Drum Kit project page exists but is not listed on the home page or in the projects gallery
+- [ ] Hero image hover changes `width`/`height`, which can cause layout shift; it should use `transform: scale()` only
+- [ ] Continue adding new course and personal projects as skills grow
 
 ---
 
 ## How to Run Locally
 
-No build tools needed. Just open `index.html` in a browser, or use the VS Code Live Server extension.
+No build tools are required. Open `index.html` in a browser, or use the VS Code Live Server extension.
 
 ---
 
 ## Course Context
 
-Built while completing **Angela Yu's The Complete 2024 Web Development Bootcamp** (Udemy). Each mini-project added to `public/projects/` represents a course exercise that was expanded and integrated into the portfolio.
+Built while completing **Angela Yu's The Complete Full-Stack Web Development Bootcamp** on Udemy. Course exercises are expanded and integrated into the portfolio as standalone project pages.
 
 ---
 
