@@ -9,7 +9,7 @@ A personal portfolio website built by **Charis Martakis** while progressing thro
 
 ## Purpose
 
-This website documents my transition from web content operations into front-end development, QA/test automation, and technical tooling. It combines course projects, professional experience, and selected personal/internal projects as my skills grow.
+This website documents my path from web content operations and automation into software development. Since October 2026 I work as a Backend Developer (Java) in the iGaming industry. The site combines my professional experience, selected personal and thesis projects, and course projects as my skills grow.
 
 ---
 
@@ -130,7 +130,7 @@ portfolio-website/
 - **LinkedIn**: [linkedin.com/in/charis-martakis](https://www.linkedin.com/in/charis-martakis/)
 - **GitHub**: [github.com/CharisMartakis](https://github.com/CharisMartakis)
 - **Location**: Athens, Greece
-- **Background**: Integrated Master's in Electrical & Electronics Engineering; Web Content Specialist expanding into front-end development, QA/test automation, and technical tooling
+- **Background**: Integrated Master's in Electrical & Electronics Engineering; Backend Developer (Java) at Campeon Gaming since Oct 2026, previously Web Content Specialist focused on automation, QA and internal tooling
 
 ---
 
@@ -192,4 +192,4 @@ Built while completing **Angela Yu's The Complete Full-Stack Web Development Boo
 
 ---
 
-*Last updated: June 2026*
+*Last updated: November 2026*
